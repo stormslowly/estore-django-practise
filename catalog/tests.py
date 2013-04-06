@@ -20,4 +20,11 @@ class SimpleTest(TestCase):
         self.assertTrue(category)
         product = Product();
         self.assertTrue(product)
-        
+'''
+from catalog.admin import ProductAdmin
+from django.contrib import admin
+class ModelAdminTest(TestCase):
+    
+    def test_ok_to_register(self):
+        admin.site.register(Product, ProductAdmin)
+'''
