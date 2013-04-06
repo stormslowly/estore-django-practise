@@ -13,7 +13,7 @@ def show_category(request,category_slug,template_name='catalog/category.html'):
     products = c.product_set.all()
     
     page_title = c.name
-    meta_keywords = c.meta_keyswords
+    meta_keywords = c.meta_keywords
     meta_description = c.meta_description
     
     return render_to_response(template_name,locals(),
@@ -23,7 +23,7 @@ def show_product(request,product_slug,template_name='catalog/product.html'):
     p = get_object_or_404(Product,slug=product_slug)
     categories = p.categories.filter(is_active=True)
     page_title = p.name
-    meta_keywords = p.meta_keyswords
+    meta_keywords = p.meta_keywords
     meta_description = p.meta_description
     
     return render_to_response(template_name,locals(),
