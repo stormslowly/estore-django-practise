@@ -21,6 +21,10 @@ class Category(models.Model):
     
     def __unicode__(self):
         return self.name
+    
+    @models.permalink
+    def get_absolute_url(self):
+        return ('catalog_category',(),{'category_slug':self.slug})
 
 class Product(models.Model):
     name = models.CharField(max_length=255,unique=True)

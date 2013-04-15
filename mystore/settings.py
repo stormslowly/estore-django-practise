@@ -15,7 +15,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/pshu/workspace/mystore/sqlite.db',                      # Or path to database file if using sqlite3.
+        'NAME': os.path.join(CURRENT_DIR,'sqlite.db'),                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -68,7 +68,7 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = os.path.join(CURRENT_DIR,'static/')
+STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'catalog',
     'utils',
+    'cart',
 )
 
 # A sample logging configuration. The only tangible logging
