@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'catalog',
     'utils',
     'cart',
+    'accounts',
 )
 
 # A sample logging configuration. The only tangible logging
