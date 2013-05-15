@@ -164,7 +164,7 @@ LOGGING = {
 
 SITE_NAME = 'feifei delicious'
 META_KEYWORDS = 'food,drink,beer,snack'
-
+ENABLE_SSL = True
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.debug',
