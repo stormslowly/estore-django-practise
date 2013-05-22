@@ -19,8 +19,10 @@ class SimpleTest(TestCase):
         login_path = reverse('login');
         self.assertEqual('/accounts/login/', login_path)
 
-
     def test_login_web_page(self):
-        
         response = self.client.get(reverse('login'))
+        self.assertEqual(response.status_code,200)
+        
+    def test_register(self):
+        response = self.client.get(reverse('register'))
         self.assertEqual(response.status_code,200)

@@ -3,8 +3,7 @@ from mystore import settings
 
 urlpatterns = patterns('accounts.views',
     url(r'^register/$', 'register',
-        {'template_name': 'registration/register.html', 
-         'SSL': settings.ENABLE_SSL }, 'register'),
+        {'template_name': 'registration/register.html'}, 'register'),
 #    url(r'^my_account/$', 'my_account',
 #         {'template_name': 'registration/my_account.html'}, 'my_account'),
 #    url(r'^order_info/$', 'order_info',
