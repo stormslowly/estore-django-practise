@@ -2,7 +2,7 @@
 {% block content%}
 
 <div class="product_image">
-	<img src="{{MEDIA_URL}}images/products/{{p.image}}">
+	<img src= {{ p.image.url }}>
 </div>
 <div>
 <h1>{{p.name}}</h1>

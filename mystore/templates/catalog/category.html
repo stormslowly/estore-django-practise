@@ -8,7 +8,7 @@
 {% for p in products %}
 	<div class="product_thumbnail">
 		<a href="{{  p.get_absolute_url }}" >
-			<img src="{{ MEDIA_URL }}images/products/{{p.image}}"</img>
+			<img src="{{ p.thumbnail.url }}" </img>
 		</a>
 	</div>
 	
