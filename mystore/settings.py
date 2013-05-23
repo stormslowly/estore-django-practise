@@ -118,6 +118,8 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+
+# A sample logging configuration. The only tangible logging
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,9 +134,8 @@ INSTALLED_APPS = (
     'utils',
     'cart',
     'accounts',
+    'alltests',
 )
-
-# A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
 # See http://docs.djangoproject.com/en/dev/topics/logging for
